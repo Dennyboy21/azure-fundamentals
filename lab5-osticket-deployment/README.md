@@ -14,7 +14,8 @@
 📸 Screenshots:
 <img width="1920" height="1080" alt="osticket-vm-creation" src="https://github.com/user-attachments/assets/042d609c-6466-4d06-a165-b6fcadf2a6a4" />
 
-[Uploading Screenshot 2025-09-14 071758.png…]()
+<img width="953" height="987" alt="Screenshot 2025-09-14 071758" src="https://github.com/user-attachments/assets/9063d633-77fc-4b4e-b8c7-0aaccbbe64d4" />
+
 
 ---
 
