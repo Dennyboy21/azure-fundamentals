@@ -48,8 +48,8 @@
 5. Reloaded IIS → Navigated to `http://localhost/osTicket`.
 
 📸 Screenshots:
-- ![PHP Manager Registration](artifacts/screenshots/php-manager.png)
-- ![osTicket Initial Page](artifacts/screenshots/osticket-initial.png)
+<img width="770" height="731" alt="Screenshot 2025-09-14 080420" src="https://github.com/user-attachments/assets/a154977f-62e3-498a-b7cc-09edd7861452" />
+<img width="1512" height="989" alt="Screenshot 2025-09-14 080758" src="https://github.com/user-attachments/assets/2451b753-b28e-4379-b69a-323b7640cc9c" />
 
 ---
 
