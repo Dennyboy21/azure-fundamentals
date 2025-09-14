@@ -61,7 +61,7 @@
 2. Refreshed osTicket site and confirmed extensions active.
 
 📸 Screenshots:
-- ![PHP Extensions Enabled](artifacts/screenshots/php-extensions.png)
+<img width="1075" height="857" alt="Screenshot 2025-09-14 081721" src="https://github.com/user-attachments/assets/4744ac90-e48b-44b3-95c4-cacd8d41c6d8" />
 
 ---
 
@@ -76,7 +76,7 @@
    - Default email: `helpdesk@example.com`
 
 📸 Screenshots:
-- ![Config Permissions](artifacts/screenshots/config-permissions.png)
+<img width="1177" height="734" alt="Screenshot 2025-09-14 082636" src="https://github.com/user-attachments/assets/5c887f27-fadd-4199-ad7f-9c7bb2736c6c" />
 
 ---
 
@@ -91,8 +91,8 @@
 5. Clicked **Install Now!**
 
 📸 Screenshots:
-- ![HeidiSQL Database Creation](artifacts/screenshots/heidisql.png)
-- ![osTicket Install Success](artifacts/screenshots/osticket-installed.png)
+<img width="1086" height="542" alt="Screenshot 2025-09-14 082847" src="https://github.com/user-attachments/assets/ddf34dbb-c95c-49f9-92be-b29d9555b375" />
+<img width="1302" height="896" alt="Screenshot 2025-09-14 083458" src="https://github.com/user-attachments/assets/55b56dca-ff79-4795-9bc9-22f33963cbb3" />
 
 ---
 
