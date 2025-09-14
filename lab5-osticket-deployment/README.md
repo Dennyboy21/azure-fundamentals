@@ -1,0 +1,126 @@
+<img width="953" height="987" alt="Screenshot 2025-09-14 071758" src="https://github.com/user-attachments/assets/4d5f66c4-171a-4578-83dd-287db0cda815" /><img width="953" height="987" alt="Screenshot 2025-09-14 071758" src="https://github.com/user-attachments/assets/fb2e06ef-6a91-4525-9a2b-292fcc90957f" /># Lab 5 – osTicket Deployment on Azure VM
+
+**Objective:** Deploy a Windows 10 VM in Azure and install/configure the osTicket Help Desk system, including dependencies (IIS, PHP, MySQL). Practice application deployment, configuration management, and basic hardening.
+
+---
+
+## Part 1 – VM Setup
+1. Created a **Windows 10 VM** in Azure:
+   - Name: `osticket-vm`
+   - Size: 4 vCPUs
+   - Username: `labuser`
+   - Password: `osTicketPassword1!`
+2. Connected via Remote Desktop to `osticket-vm`.
+3. Downloaded and unzipped **osTicket-Installation-Files.zip** to the Desktop.
+
+📸 Screenshots:
+<img width="1920" height="1080" alt="osticket-vm-creation" src="https://github.com/user-attachments/assets/042d609c-6466-4d06-a165-b6fcadf2a6a4" />
+
+[Uploading Screenshot 2025-09-14 071758.png…]()
+
+---
+
+## Part 2 – Install Dependencies
+1. Installed **IIS with CGI** enabled:  
+   `World Wide Web Services → Application Development Features → [X] CGI`
+2. From the installation folder:
+   - Installed **PHP Manager for IIS**  
+   - Installed **Rewrite Module**  
+3. Created directory `C:\PHP`.  
+   - Extracted **PHP 7.3.8** into `C:\PHP`.
+4. Installed **VC_redist.x86.exe**.
+5. Installed **MySQL 5.5.62** (Typical Setup).  
+   - Configured Standard Setup → Root user `root/root`.
+
+📸 Screenshots:
+- ![IIS Installation](artifacts/screenshots/iis-install.png)
+- ![PHP Setup](artifacts/screenshots/php-setup.png)
+- ![MySQL Setup](artifacts/screenshots/mysql-setup.png)
+
+---
+
+## Part 3 – Configure IIS & PHP
+1. Opened **IIS as Administrator**.
+2. Registered PHP in IIS (PHP Manager → `C:\PHP\php-cgi.exe`).
+3. Restarted IIS services.
+4. Installed **osTicket v1.15.8**:
+   - Copied “upload” folder into `C:\inetpub\wwwroot\`
+   - Renamed folder to `osTicket`.
+5. Reloaded IIS → Navigated to `http://localhost/osTicket`.
+
+📸 Screenshots:
+- ![PHP Manager Registration](artifacts/screenshots/php-manager.png)
+- ![osTicket Initial Page](artifacts/screenshots/osticket-initial.png)
+
+---
+
+## Part 4 – Enable Required Extensions
+1. In IIS → PHP Manager → Enabled:
+   - `php_imap.dll`
+   - `php_intl.dll`
+   - `php_opcache.dll`
+2. Refreshed osTicket site and confirmed extensions active.
+
+📸 Screenshots:
+- ![PHP Extensions Enabled](artifacts/screenshots/php-extensions.png)
+
+---
+
+## Part 5 – Final Configurations
+1. Renamed config file:  
+   `C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php` → `ost-config.php`.
+2. Adjusted permissions:  
+   - Disabled inheritance, removed all existing permissions.  
+   - Granted **Everyone → Full Control** (temporary for setup).
+3. Continued setup in browser:
+   - Helpdesk name: `My Helpdesk`
+   - Default email: `helpdesk@example.com`
+
+📸 Screenshots:
+- ![Config Permissions](artifacts/screenshots/config-permissions.png)
+
+---
+
+## Part 6 – Database Setup
+1. Installed **HeidiSQL**.
+2. Connected with `root/root`.
+3. Created new database: `osTicket`.
+4. Completed browser setup:
+   - Database: `osTicket`
+   - Username: `root`
+   - Password: `root`
+5. Clicked **Install Now!**
+
+📸 Screenshots:
+- ![HeidiSQL Database Creation](artifacts/screenshots/heidisql.png)
+- ![osTicket Install Success](artifacts/screenshots/osticket-installed.png)
+
+---
+
+## Part 7 – Post-Install & Cleanup
+- Admin portal: `http://localhost/osTicket/scp/login.php`  
+- End-user portal: `http://localhost/osTicket/`  
+- Deleted `C:\inetpub\wwwroot\osTicket\setup`.  
+- Set `ost-config.php` to **Read-only** for security.
+
+---
+
+## 🔐 Security Practices
+- Restricted VM RDP access to home IP.  
+- Removed dangerous permissions after installation.  
+- Deleted setup files to prevent reconfiguration.  
+- Set `ost-config.php` to read-only.
+
+---
+
+## 📚 Lessons Learned
+- Deploying a web application on IIS requires enabling correct PHP extensions.  
+- Database setup and permissions are critical for application security.  
+- Azure VMs can be used to replicate **real enterprise IT apps** for practice.  
+- osTicket is a valuable platform to demonstrate **help desk and ticketing system knowledge**.
+
+---
+
+## Related Labs
+- [Lab 2 – First Virtual Machine](../lab2-first-vm/README.md)  
+- [Lab 4 – Networking Traffic Analysis](../lab4-networking-traffic/README.md)  
