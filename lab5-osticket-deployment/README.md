@@ -1,5 +1,3 @@
-<img width="953" height="987" alt="Screenshot 2025-09-14 071758" src="https://github.com/user-attachments/assets/4d5f66c4-171a-4578-83dd-287db0cda815" /><img width="953" height="987" alt="Screenshot 2025-09-14 071758" src="https://github.com/user-attachments/assets/fb2e06ef-6a91-4525-9a2b-292fcc90957f" /># Lab 5 – osTicket Deployment on Azure VM
-
 **Objective:** Deploy a Windows 10 VM in Azure and install/configure the osTicket Help Desk system, including dependencies (IIS, PHP, MySQL). Practice application deployment, configuration management, and basic hardening.
 
 ---
