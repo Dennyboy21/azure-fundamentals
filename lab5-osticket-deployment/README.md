@@ -32,9 +32,9 @@
    - Configured Standard Setup → Root user `root/root`.
 
 📸 Screenshots:
-- ![IIS Installation](artifacts/screenshots/iis-install.png)
-- ![PHP Setup](artifacts/screenshots/php-setup.png)
-- ![MySQL Setup](artifacts/screenshots/mysql-setup.png)
+<img width="950" height="988" alt="Screenshot 2025-09-14 075041" src="https://github.com/user-attachments/assets/7a15c3ca-0b2d-46e0-8a47-0b2719bfc340" />
+<img width="956" height="984" alt="Screenshot 2025-09-14 075548" src="https://github.com/user-attachments/assets/970e9d12-f748-4764-911b-342e9a052c9c" />
+<img width="856" height="579" alt="Screenshot 2025-09-14 080042" src="https://github.com/user-attachments/assets/cb4e436c-f56f-474a-bae2-d0575de429f0" />
 
 ---
 
