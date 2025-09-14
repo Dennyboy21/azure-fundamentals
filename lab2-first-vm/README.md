@@ -10,9 +10,11 @@
    <img width="1920" height="1080" alt="Screenshot 2025-09-14 102059" src="https://github.com/user-attachments/assets/62a933ae-0150-4f73-9c8e-e6d9d00a843c" />
 3. Configured RDP access limited to my home IP.
 4. Connected via Remote Desktop.
-   - ![RDP Login](artifacts/screenshots/rdp-login.png)
+   <img width="1920" height="1080" alt="Screenshot 2025-09-14 101241" src="https://github.com/user-attachments/assets/01a98ca4-ae54-4080-b244-52344bff7daa" />
 5. Installed updates, baseline tools, and snapshots.
-   - ![Windows Update](artifacts/screenshots/windows-update.png)
+   <img width="1333" height="1009" alt="Screenshot 2025-09-14 111551" src="https://github.com/user-attachments/assets/cd314ee5-98e4-4df5-9fc7-a4fb0fd2ddd2" />
+   
+
 
 ---
 
