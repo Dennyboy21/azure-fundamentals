@@ -7,7 +7,7 @@
 ## Steps Taken
 1. Created a new Resource Group for the lab.
 2. Built a **Windows 11 VM (B1s)** with username/password auth.
-   - ![VM Deployment](artifacts/screenshots/vm-deployment.png)
+   <img width="1920" height="1080" alt="Screenshot 2025-09-14 102059" src="https://github.com/user-attachments/assets/62a933ae-0150-4f73-9c8e-e6d9d00a843c" />
 3. Configured RDP access limited to my home IP.
 4. Connected via Remote Desktop.
    - ![RDP Login](artifacts/screenshots/rdp-login.png)
